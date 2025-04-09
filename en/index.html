@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Website code Copyright © 2025 A Spark to Inspire. Unauthorized reproduction, distribution, or use of this code, in whole or in part, is strictly prohibited and may result in legal action. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="title" content="A Spark to Inspire">
+        <link id="sheetLink" rel="stylesheet" href="lightSheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="sparktoinspirefavicon.png">
+        <title>A Spark to Inspire</title>
+    </head>
+    <body>
+        <div id="langNotice">
+            <p>¿Buscas el sitio web en español? <a id="langSwitchPromptLink" class="externalLink" href="https://es.asparktoinspire.org">Encuéntralo aquí.</a></p>
+        </div>
+        <div id="header">
+            <div id="headerContent">
+                <img src="aSparkToInspire_transparent.png" width="164.4" height="60.8" alt="A Spark to Inspire Logo">
+                <div id="headerItems">
+                    <a class="headerLink" href="#ourStory">Our Story</a>
+                    <a class="headerLink" href="#ourTeam">Our Team</a>
+                    <a class="headerLink" href="#donate">Donate</a>
+                    <a class="headerLink" href="#contactUs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div id="mainSection">
+            <h1 id="mainTitle">A Spark to Inspire</h1>
+            <h2 id="mainSubtitle">Bringing Light to Every Child's Fight</h2>
+        </div>
+        <div id="ourStory">
+            <h2>Our Story</h2>
+            <p style="padding: 0 20px;text-align: left;text-indent: 40px;">When Sammy Wechter was two years old, she was diagnosed with ALL, a form of blood cancer. She then relapsed two days before her sixth birthday. Both times, Sammy was treated at NYU by Dr. Carroll and an incredible nursing staff that helped her every step of the way. Most of all though, she couldn’t have done it without her family. The courage and strength she showed every day as a child is exemplified through her lively and hardworking spirit today. Sammy is an inspiring example of someone who battled cancer (twice) as a child and came out strong and ready to give back. But it wasn’t easy. She struggled through hardships time and time again. Her parents and those around her sacrificed so much to help her battle this evil disease. “Still,” she remarks, “they managed to bring me silly forms of entertainment like clowns and artistic extracurriculars which gave me strength to get through both physical and emotional battles.” Today, she wants to give back. She wants to help children in situations like her by spreading joy and giving purpose to young children fighting diseases at NYU. When sharing this revelation with Ari Odinec, a lifelong school friend, they had the idea of creating a nonprofit. Ari created her first poem in 2020 as a ten-year-old. She continued to create poems as her heart desired. With the help of her parents, she created a website to share these poems with the world. After her parents divorce, she expressed a growing gratitude for the ability to have something like poetry to express her feelings. Partnering with Sammy, she hopes to give people their version of poetry. “I have no idea what it’s like to go through something like that [cancer],” she says, “but even when going through small hardships, having a way to express my feelings and share my talents with the world was a blessing I wish to give kids who struggled or are struggling like Sammy.”</p>
+        </div>
+        <div id="ourTeam">
+            <h2>Our Team</h2>
+            <div id="teamMemberOverviews">
+                <div style="text-align: center;margin: 0 auto;display: block;">
+                    <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Sammy Wechter" width="250" height="250">
+                    <h4>Sammy Wechter</h4>
+                    <p style="text-align: center;">Chief Executive Officer<br>Head of Local Initiatives</p>
+                </div>
+                <div style="text-align: center;margin: 0 auto;display: block;">
+                    <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Ari Odinec" width="250" height="250">
+                    <h4>Ari Odinec</h4>
+                    <p>Chief Executive Officer<br>Head of Fundraising</p>
+                </div>
+                <div style="text-align: center;margin: 0 auto;display: block;">
+                    <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Ben Fink" width="250" height="250">
+                    <h4>Ben Fink</h4>
+                    <p>Chief Technology Officer</p>
+                </div>
+            </div>
+        </div>
+        <div id="donate">
+            <h2>Donate</h2>
+            <p>Donate to help us bring joy and happiness to those who need it most. Any amount is appreciated.</p>
+            <div id="donatePush">
+                <img src="alert_sign.png" width="48" height="48">
+                <p>A Spark to Inspire needs your help! Even a small donation can change days and brighten smiles for hospitalized children all across NYC.</p>
+            </div>
+            <div id="donateForm">
+                <button id="donation200" class="donationSelect" onclick="donationSelect('donation200');donationAmount = 200;updateTransactionFee();" value="200">$200</button>
+                <button id="donation100" class="donationSelect" onclick="donationSelect('donation100');donationAmount = 100;updateTransactionFee();" value="100">$100</button>
+                <button id="donation50" class="donationSelect" onclick="donationSelect('donation50');donationAmount = 50;updateTransactionFee();" value="50">$50</button>
+                <button id="donation25" class="donationSelect" onclick="donationSelect('donation25');donationAmount = 25;updateTransactionFee();" value="25">$25</button>
+                <button id="donationOther" class="donationSelect" onclick="donationSelect('donationOther');donationAmount = NaN;updateTransactionFee();document.getElementById('otherAmount').value = '';">Other</button><br>
+                <div id="otherAmountContainer">
+                    <p style="font-size: 20pt;margin: 0 -15px;z-index: 9999;">$</p>
+                    <input type="number" id="otherAmount">
+                </div>
+                <div style="margin: 15px 0;">
+                    <label id="transactionFeeConsentLabel" for="transactionFeeConsent">I agree to cover the transaction fee to ensure that A Spark to Inspire receives 100% of my donation</label>
+                    <input type="checkbox" id="transactionFeeConsent"><br>
+                </div>
+                <button id="donateButton">Donate</button>
+                <p>For donations over $2,000, please contact us at <a href="mailto:asparktoinspire@gmail.com" class="externalLink">asparktoinspire@gmail.com</a>.</p>
+            </div>
+        </div>
+        <div id="contactUs">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" name="name" placeholder="Name*"><br>
+                <input type="email" id="contactEmail" name="email" placeholder="Email*"><br>
+                <input type="text" id="contactSubject" name="subject" placeholder="Subject*"><br>
+                <textarea id="contactMessage" name="message" placeholder="Message*"></textarea><br>
+                <button type="reset">Clear</button>
+                <button>Send</button>
+            </form>
+            <p>For a more direct line of contact, please email us at <a href="mailto:asparktoinspire@gmail.com" class="externalLink">asparktoinspire@gmail.com</a>. If you use this form, you will receive a response from that email.</p>
+        </div>
+        <div id="footer">
+            <p>Copyright © 2025 A Spark to Inspire. All rights reserved.</p>
+            <p>A Spark to Inspire is a registered nonprofit organization in the United States under section 501(c)(3) of the Internal Revenue Code. Donations are tax-deductible to the fullest extent permitted by law. (Employer Identification Number: 33-3402303)</p>
+            <div id="langSelectContainer">
+                <select id="langSelect">
+                    <option value="english" id="enOption">🇺🇸 English</option>
+                    <option value="spanish" id="esOption">🇪🇸 Español</option>
+                </select>
+            </div>
+        </div>
+        <div id="popupBackground"></div>
+        <div id="linkSecurity">
+            <h1>Caution</h1>
+            <p>The website you're about to visit–<span id="linkInMainParagraph">[domain]</span>–is not affiliated with or endorsed by A Spark to Inspire.</p>
+            <p>Website URL: <span id="websiteURL">[link]</span></p>
+            <p>Status: <span id="securityStatus">[securityStatus]</span></p>
+            <div style="display: flex;">
+                <button onclick="closeDialog();">Go Back</button>
+                <button onclick="linkApproved();">Continue</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+<!-- Website code Copyright © 2025 A Spark to Inspire. Unauthorized reproduction, distribution, or use of this code, in whole or in part, is strictly prohibited and may result in legal action. -->
