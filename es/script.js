@@ -132,7 +132,7 @@ const langDropdown = document.getElementById('langSelect');
 langDropdown.addEventListener('change', () => {
     if (langDropdown.value === 'english') {
         setTimeout(() => {
-            window.location.href = 'https://www.asparktoinspire.org';
+            window.location.href = 'https://www.asparktoinspire.org/en';
             langDropdown.selectedIndex = 1;
         }, 250);
     }
