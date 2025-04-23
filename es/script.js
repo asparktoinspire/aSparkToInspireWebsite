@@ -156,4 +156,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    try {
+        e.preventDefault();
+        const formData = new FormData(document.getElementById('contactForm'));
+
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyrQrEVJtvc80CEf2lP2fCmm324b1l6dw0YOoP3UkSiNurkebzIOCrULYUaBBs5Wq7obw/exec', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (response.ok) {
+            document.getElementById('contactForm').reset();
+        }
+    } catch (err) {
+        console.error(err);
+        document.getElementById('contactForm').reset();
+    }
+});
+
 // Código del sitio web Copyright © 2025 A Spark to Inspire. La reproducción, distribución o uso no autorizado de este código, total o parcial, está estrictamente prohibido y puede resultar en acciones legales.
