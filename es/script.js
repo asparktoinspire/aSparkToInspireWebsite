@@ -6,9 +6,11 @@ function donationSelect(item) {
     const donationButtons = document.querySelectorAll('.donationSelect');
     donationButtons.forEach((button) => {
         if (button.id === item) {
-            button.style.backgroundColor = 'rgb(0, 174, 248)';
+            button.style.backgroundColor = 'rgb(60, 73, 167)';
+            button.style.color = 'white';
         } else {
             button.style.backgroundColor = 'white';
+            button.style.color = 'black';
         }
 
         if (item === 'donationOther') {

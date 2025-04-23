@@ -1,7 +1,7 @@
-/* Código del sitio web Copyright © 2025 A Spark to Inspire. La reproducción, distribución o uso no autorizado de este código, total o parcial, está estrictamente prohibido y puede resultar en acciones legales. */
+/* Website code Copyright © 2025 A Spark to Inspire. All rights reserved. Unauthorized reproduction, distribution, or use of this code, in whole or in part, is strictly prohibited and may result in legal action. */
 
 * {
-    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-family: 'Nunito Sans', 'Helvetica', sans-serif;
     max-width: 100%;
 }
 
@@ -27,6 +27,7 @@ select {
     font-size: 13.3333px;
 }
 
+
 input {
     font-size: 16px;
     accent-color: rgb(191, 149, 63);
@@ -43,7 +44,7 @@ textarea {
 #header {
     display: flex;
     align-items: center;
-    background-color: rgb(0, 174, 248);
+    background-color: white;
     border-bottom: 1px solid black;
     padding: 10px;
     user-select: none;
@@ -57,7 +58,10 @@ textarea {
 #headerContent {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+}
+
+#main-logo {
+    object-fit: cover;
 }
 
 .headerLink {
@@ -98,7 +102,7 @@ textarea {
     margin: 5px 0;
     width: 75vw;
     outline: none;
-    border: 1px solid rgb(0, 174, 248);
+    border: 1px solid rgb(60, 73, 167);
     border-radius: 5px;
     transition: border 0.2s ease;
 }
@@ -111,7 +115,7 @@ textarea {
     padding: 10px;
     margin: 5px;
     background-color: white;
-    border: 2px solid rgb(0, 174, 248);
+    border: 2px solid rgb(60, 73, 167);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, font-weight 0.3s ease, border 0.3s ease;
@@ -130,7 +134,7 @@ textarea {
     margin: 5px 0;
     width: 75vw;
     outline: none;
-    border: 1px solid rgb(0, 174, 248);
+    border: 1px solid rgb(60, 73, 167);
     border-radius: 5px;
     transition: border 0.2s ease;
 }
@@ -160,7 +164,7 @@ textarea {
 .donationSelect {
     padding: 10px;
     margin: 5px;
-    border: 2px solid rgb(0, 174, 248);
+    border: 2px solid rgb(60, 73, 167);
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
@@ -174,7 +178,7 @@ textarea {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid rgb(0, 174, 248);
+    border-bottom: 2px solid rgb(60, 73, 167);
     font-size: 20pt;
     transition: border 0.2s ease;
 }
@@ -206,11 +210,12 @@ input[type="number"] {
 
 #donateButton {
     padding: 15px 40px;
+    color: white;
     margin: 10px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: rgb(0, 174, 248);
+    background-color: rgb(60, 73, 167);
     font-weight: bold;
     font-size: 18pt;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -225,23 +230,9 @@ input[type="number"] {
     transform: scale(0.95);
 }
 
-#donatePush {
-    background-color: rgb(204, 9, 2);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 50%;
-    color: white;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: default;
-}
-
 #footer {
     padding: 10px;
-    background-color: rgb(0, 174, 248);
+    background-color: white;
 }
 
 #otherAmountContainer {
@@ -318,4 +309,8 @@ input[type="number"] {
     padding: 5px 0;
 }
 
-/* Código del sitio web Copyright © 2025 A Spark to Inspire. La reproducción, distribución o uso no autorizado de este código, total o parcial, está estrictamente prohibido y puede resultar en acciones legales. */
+#transactionFeeConsentLabel {
+    font-size: 10pt;
+}
+
+/* Website code Copyright © 2025 A Spark to Inspire. All rights reserved. Unauthorized reproduction, distribution, or use of this code, in whole or in part, is strictly prohibited and may result in legal action. */
