@@ -81,10 +81,12 @@ textarea {
 }
 
 #mainSection {
+    color: white;
     text-align: center;
     justify-content: center;
     height: 75vh;
     border-bottom: 1px solid black;
+    background: url("img/title-img.png") center;
 }
 
 #mainSection h1 {
